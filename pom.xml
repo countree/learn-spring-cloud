@@ -13,6 +13,8 @@
 
     <modules>
         <module>eureka-registry</module>
+        <module>provider-server</module>
+        <module>consumer-client</module>
     </modules>
 
     <parent>
