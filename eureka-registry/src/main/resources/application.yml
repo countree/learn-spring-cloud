@@ -1,0 +1,14 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: server-center
+eureka:
+  instance:
+    hostname: localhost
+   # preferIpAddress: true  #加上这句hostname就只能写ip了  写localhost会报错起不来
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
